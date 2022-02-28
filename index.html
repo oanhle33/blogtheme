@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Oanh Le</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://imgur.com/J6tFWUY.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+     li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://imgur.com/TJkM8bp.jpg">
+    <h1>Oanh's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Hikking</a></li>
+      <li><a href="#">Camping</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>About me</h2>
+    <p>
+    Hi! I'm Oanh, a California based Software Engineer learner.
+    Outside of studing and working, I love to go hiking and camping with friends and even a group. These activities help me do exercise, regain energy as well as make friends. I also gain necessary survival skills through outdoor activities. So let's get started to know more about hiking and camping.</p>
+    <button>Like</button>
+    <hr>
+  </article>
+  <article>
+    <h2>Hikking</h2>
+    <p>Top 10 Hikking Trails in Bay Area</p>
+    <p>The list of essential hiking gear</p>
+    <p>Protect yourself from ticks while hiking</p>
+    <button>Like</button>
+    <hr>
+  </article>
+  <article>
+    <h2>Camping</h2>
+    <p>Best cammping within three hours of San Francisco</p>
+    <p>Important items for camping checklist</p>
+    <p>10 backyard camping ideas</p>
+    <button>Like</button>
+    <hr>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
